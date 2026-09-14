@@ -54,31 +54,11 @@ public interface NoiseConfig {
      */
     int height();
 
-    /**
-     * The horizontal scaling of landmass.
-     * <p>Higher values increase the distances</p>
-     *
-     * @return the horizontal scaling of landmass.
-     */
-    int horizontalSize();
-
-    /**
-     * The vertical scaling of landmass.
-     * <p>Higher values increase the average height of the landmass</p>
-     *
-     * @return the vertical scaling of landmass.
-     */
-    int verticalSize();
-
     interface Builder extends org.spongepowered.api.util.Builder<NoiseConfig, Builder>, CopyableBuilder<NoiseConfig, Builder> {
 
         Builder minY(int minY);
 
         Builder height(int height);
-
-        Builder horizontalSize(int horizontal);
-
-        Builder verticalSize(int vertical);
     }
 
 }

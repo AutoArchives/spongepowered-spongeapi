@@ -95,7 +95,11 @@ public interface ItemAction {
     }
 
     static TeleportRandomly teleportRandomly(final double distance) {
-        return ItemAction.factory().teleportRandomly(distance);
+        return ItemAction.factory().teleportRandomly(distance, true);
+    }
+
+    static TeleportRandomly teleportRandomly(final double distance, final boolean directionalParticles) {
+        return ItemAction.factory().teleportRandomly(distance, directionalParticles);
     }
 
     private static Factory factory() {
@@ -197,6 +201,6 @@ public interface ItemAction {
 
         PlaySound playSound(SoundType soundType);
 
-        TeleportRandomly teleportRandomly(double distance);
+        TeleportRandomly teleportRandomly(double distance, boolean directionalParticles);
     }
 }

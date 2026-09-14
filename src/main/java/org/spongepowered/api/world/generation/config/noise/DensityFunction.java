@@ -27,6 +27,7 @@ package org.spongepowered.api.world.generation.config.noise;
 import org.spongepowered.api.datapack.DataPackSerializable;
 import org.spongepowered.api.registry.DefaultedRegistryValue;
 import org.spongepowered.api.util.annotation.CatalogedBy;
+import org.spongepowered.api.world.server.ServerWorld;
 import org.spongepowered.math.vector.Vector3i;
 
 @CatalogedBy(DensityFunctions.class)
@@ -47,18 +48,20 @@ public interface DensityFunction extends DefaultedRegistryValue<DensityFunction>
     /**
      * Computes the noise value at given position.
      *
+     * @param world The world
      * @param pos The position
      * @return The noise value at given position
      */
-    double compute(Vector3i pos);
+    double compute(final ServerWorld world, Vector3i pos);
 
     /**
      * Computes the noise value at given position
      *
+     * @param world The world
      * @param x The x coordinate
      * @param y The y coordinate
      * @param z The z coordinate
      * @return The noise value at given position
      */
-    double compute(int x, int y, int z);
+    double compute(final ServerWorld world, int x, int y, int z);
 }

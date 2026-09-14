@@ -112,13 +112,6 @@ public interface NoiseGeneratorConfig extends ChunkGeneratorConfig, DefaultedReg
     boolean aquifers();
 
     /**
-     * Whether ore veins are generated.
-     *
-     * @return true when the ore veins are generated.
-     */
-    boolean oreVeins();
-
-    /**
      * Whether generation uses the legacy random source.
      * <p>As of Minecraft 1.19 the legacy random source is still used for nether and end generation.</p>
      *
@@ -185,14 +178,6 @@ public interface NoiseGeneratorConfig extends ChunkGeneratorConfig, DefaultedReg
          * @return This builder, for chaining
          */
         Builder aquifers(boolean enableAquifers);
-
-        /**
-         * Sets whether to generate or veins.
-         *
-         * @param enableOreVeins true to enable ore veins
-         * @return This builder, for chaining
-         */
-        Builder oreVeins(boolean enableOreVeins);
 
         /**
          * Sets whether to enable mob generation.
