@@ -65,7 +65,7 @@ public final class StructureTags {
 
     public static final DefaultedTag<Structure> ON_ABANDONED_CAMP_SWAMP = StructureTags.key(ResourceKey.minecraft("on_abandoned_camp_swamp"));
 
-    public static final DefaultedTag<Structure> ON_ABANDONED_CAMP_WINDSWEPT = StructureTags.key(ResourceKey.minecraft("on_abandoned_camp_windswept"));
+    public static final DefaultedTag<Structure> ON_ABANDONED_CAMP_WINDSWEPT_FOREST = StructureTags.key(ResourceKey.minecraft("on_abandoned_camp_windswept_forest"));
 
     public static final DefaultedTag<Structure> ON_ANCIENT_CITY_MAPS = StructureTags.key(ResourceKey.minecraft("on_ancient_city_maps"));
 
