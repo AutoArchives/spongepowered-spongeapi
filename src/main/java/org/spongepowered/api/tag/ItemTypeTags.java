@@ -227,6 +227,8 @@ public final class ItemTypeTags {
 
     public static final DefaultedTag<ItemType> FROG_FOOD = ItemTypeTags.key(ResourceKey.minecraft("frog_food"));
 
+    public static final DefaultedTag<ItemType> FURNACE_FUEL_BOTTOM_TAKEABLE = ItemTypeTags.key(ResourceKey.minecraft("furnace_fuel_bottom_takeable"));
+
     public static final DefaultedTag<ItemType> FURNACE_MINECART_FUEL = ItemTypeTags.key(ResourceKey.minecraft("furnace_minecart_fuel"));
 
     public static final DefaultedTag<ItemType> GAZE_DISGUISE_EQUIPMENT = ItemTypeTags.key(ResourceKey.minecraft("gaze_disguise_equipment"));
